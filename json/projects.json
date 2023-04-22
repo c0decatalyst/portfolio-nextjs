@@ -1,0 +1,80 @@
+[
+    {
+        "logoUrl":"https://www.vectorlogo.zone/logos/r-project/r-project-ar21.svg",
+        "title":"Modernize ATM UI and Services",
+        "summaryList":[
+            "A responsive UI launched on embedded-chrome and offering live 2-way video and deposit imaging. The system was integrated with a custom hardware interaction state-machine middleware and backend services such as mainframe authentication, live transaction reports, and real-time individual hardware status monitoring per ATM. Fleet monitoring and live-deploy capabilities could be performed through a remote responsive administrator UI.",
+            " ",
+            "US PATENT Filing US20200005263A1 https://patents.google.com/patent/US20200005263A1/en"
+        ],
+        "linkToBuild": "",
+        "technologies": [
+            { "title":"Java","logoUrl":"https://www.vectorlogo.zone/logos/java/java-vertical.svg" },
+            { "title":"JavaScript","logoUrl":"https://www.vectorlogo.zone/logos/javascript/javascript-icon.svg" },
+            { "title":"TypeScript","logoUrl":"https://www.vectorlogo.zone/logos/typescriptlang/typescriptlang-icon.svg" },
+            { "title":"Spring","logoUrl":"https://www.vectorlogo.zone/logos/springio/springio-icon.svg" },
+            { "title":"Angular","logoUrl":"https://www.vectorlogo.zone/logos/angular/angular-icon.svg" },
+            { "title":"Grunt","logoUrl":"https://www.vectorlogo.zone/logos/javascript/javascript-icon.svg" },            
+            { "title":"Jenkins","logoUrl":"https://www.vectorlogo.zone/logos/jenkins/jenkins-icon.svg" }
+        ]
+    },
+    {
+        "logoUrl":"https://www.vectorlogo.zone/logos/onepoint-projects/onepoint-projects-ar21.svg",
+        "title":"Financial Center POS device integration",
+        "summaryList":[
+            "Developed a POC to use in banking centers that would enable the POS devices to be controlled via a Javascript UI and reporting to backend java services using the spring framework."
+        ],
+        "linkToBuild": "",
+        "technologies": [
+            { "title":"Java","logoUrl":"https://www.vectorlogo.zone/logos/java/java-vertical.svg" },
+            { "title":"JavaScript","logoUrl":"https://www.vectorlogo.zone/logos/javascript/javascript-icon.svg" },
+            { "title":"Spring","logoUrl":"https://www.vectorlogo.zone/logos/springio/springio-icon.svg" }
+        ]
+    },
+    {
+        "logoUrl":"https://www.vectorlogo.zone/logos/onepoint-projects/onepoint-projects-ar21.svg",
+        "title":"E-commerce Website",
+        "summaryList":[
+            "A skincare ecommerce shop built and designed in woocommerce and embedded react. "
+        ],
+        "linkToBuild": "",
+        "technologies": [
+            { "title":"WooCommerce","logoUrl":"https://www.vectorlogo.zone/logos/wordpress/wordpress-icon.svg" },
+            { "title":"JavaScript","logoUrl":"https://www.vectorlogo.zone/logos/javascript/javascript-icon.svg" },
+            { "title":"ReactJS","logoUrl":"https://www.vectorlogo.zone/logos/reactjs/reactjs-icon.svg" },
+            { "title":"MariaDB","logoUrl":"https://www.vectorlogo.zone/logos/mariadb/mariadb-ar21.svg" }
+        ]
+    },
+    {
+        "logoUrl":"https://shatainsurance.com/static/images/logo-header.png",
+        "title":"Insurance Agency Website",
+        "summaryList":[
+            "A business website to capture health and life insurance leads. The frontend is built with NextJS/ReactJS and bootstrap CSS. The backend utilizes a hosted express nodejs app."
+        ],
+        "linkToBuild": "",
+        "technologies": [
+            { "title":"JavaScript","logoUrl":"https://www.vectorlogo.zone/logos/javascript/javascript-icon.svg" },
+            { "title":"ReactJS","logoUrl":"https://www.vectorlogo.zone/logos/reactjs/reactjs-icon.svg" },
+            { "title":"NextJS","logoUrl":"https://upload.vectorlogo.zone/logos/nextjs/images/271afdac-aad3-4712-89fd-a25f63fd6dd4.svg" },
+            { "title":"NodeJS","logoUrl":"https://www.vectorlogo.zone/logos/nodejs/nodejs-horizontal.svg" },
+            { "title":"Express","logoUrl":"https://www.vectorlogo.zone/logos/expressjs/expressjs-ar21.svg" }
+        ]
+    },
+    {
+        "logoUrl":"https://www.vectorlogo.zone/logos/onepoint-projects/onepoint-projects-ar21.svg",
+        "title":"Web Agency",
+        "summaryList":[
+            "A custom server for hosting all these projects!"
+        ],
+        "linkToBuild": "",
+        "technologies": [
+            { "title":"Java","logoUrl":"https://www.vectorlogo.zone/logos/java/java-vertical.svg" },
+            { "title":"Linux","logoUrl":"https://www.vectorlogo.zone/logos/linux/linux-icon.svg" },            
+            { "title":"Git","logoUrl":"https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg" },
+            { "title":"Nginx","logoUrl":"https://www.vectorlogo.zone/logos/nginx/nginx-ar21.svg" },
+            { "title":"Docker","logoUrl":"https://www.vectorlogo.zone/logos/docker/docker-icon.svg" },
+            { "title":"Kubernetes","logoUrl":"https://www.vectorlogo.zone/logos/kubernetes/kubernetes-icon.svg" },
+            { "title":"Ansible","logoUrl":"https://www.vectorlogo.zone/logos/ansible/ansible-icon.svg" }
+        ]
+    }
+]
