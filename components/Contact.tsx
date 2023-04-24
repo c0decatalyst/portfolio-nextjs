@@ -15,7 +15,7 @@ export default function Contact({}: Props) {
 
       <div className='flex flex-col space-y-10'>
         <h4 className='text-4xl font-semibold text-center'>
-          Let's connect and build grand {" "}
+          Let&apos;s connect and build grand {" "}
           <span className='decoration-[#F7AB0A]/50 underline'>ideas</span>
         </h4>
 

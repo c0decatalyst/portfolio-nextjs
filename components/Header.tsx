@@ -26,8 +26,9 @@ function Header({ socials }: Props) {
         }}
         className="flex flex-row items-center"
       >
-        {socials?.map((social) => (
+        {socials?.map((social, i) => (
           <SocialIcon 
+              key={i}
               url={social.url}
               fgColor="gray"
               bgColor="transparent"
