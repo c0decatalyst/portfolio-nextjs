@@ -14,7 +14,3 @@ export default async function handler(
   const projects: Project[] = Projects 
   res.status(200).json({ projects })
 }
-
-export const config = {
-	runtime: 'experimental-edge'
-};

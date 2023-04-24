@@ -14,7 +14,3 @@ export default async function handler(
   const experiences: Experience[] = Experiences 
   res.status(200).json({ experiences })
 }
-
-export const config = {
-	runtime: 'experimental-edge'
-};
