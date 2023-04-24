@@ -1,11 +1,11 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
-  // experimental: {
-  //   runtime: 'edge',
-  // },
+  experimental: {
+    runtime: 'edge',
+  },
   images: {
-    unoptimized: true,// Needed since running static 
+    // unoptimized: true, // Needed since running static 
     remotePatterns: [
       {
         protocol: 'https',
