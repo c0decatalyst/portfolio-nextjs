@@ -14,3 +14,7 @@ export default async function handler(
   const pageInfo: PageInfo = pageInfoJson 
   res.status(200).json({ pageInfo })
 }
+
+export const config = {
+	runtime: 'experimental-edge',
+}
