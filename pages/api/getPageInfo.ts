@@ -16,5 +16,5 @@ export default async function handler(
 }
 
 export const config = {
-	runtime: 'edge',
+	runtime: 'experimental-edge'
 };
