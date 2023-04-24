@@ -5,10 +5,10 @@ export const fetchExperiences = async() => {
     // const res = await fetch(
     //     `${process.env.NEXT_PUBLIC_BASE_URL}/api/getExperiences`
     // );
-    const res = await fetch('/api/getExperiences');
+    // const res = await fetch('/api/getExperiences');
 
-    const data = await res.json();
-    const experiences: Experience[] = data.experiences;
+    // const data = await res.json();
+    // const experiences: Experience[] = data.experiences;
 
     return Experiences;
 }
