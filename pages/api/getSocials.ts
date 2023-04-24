@@ -14,3 +14,7 @@ export default async function handler(
   const socials: Social[] = Socials 
   res.status(200).json({ socials })
 }
+
+export const config = {
+	runtime: 'edge',
+};

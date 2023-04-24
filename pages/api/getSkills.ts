@@ -14,3 +14,7 @@ export default async function handler(
   const skills: Skill[] = Skills 
   res.status(200).json({ skills })
 }
+
+export const config = {
+	runtime: 'edge',
+};
