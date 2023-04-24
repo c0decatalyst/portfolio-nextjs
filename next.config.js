@@ -1,5 +1,8 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  images: { // Needed since running static 
+    unoptimized: true,
+  },
   reactStrictMode: true,
   // experimental: {
   //   runtime: 'edge',
