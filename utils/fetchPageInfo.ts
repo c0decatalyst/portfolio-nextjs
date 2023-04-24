@@ -1,4 +1,5 @@
 import { PageInfo } from "../typings"
+import pageInfoJson from '@/json/pageInfo.json'
 
 export const fetchPageInfo = async() => {
     // const res = await fetch(
@@ -9,5 +10,5 @@ export const fetchPageInfo = async() => {
     const data = await res.json();
     const PageInfo: PageInfo = data.pageInfo;
 
-    return PageInfo;
+    return pageInfoJson;
 }

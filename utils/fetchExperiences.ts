@@ -1,4 +1,5 @@
 import { Experience } from "../typings"
+import Experiences from '@/json/experiences.json'
 
 export const fetchExperiences = async() => {
     // const res = await fetch(
@@ -9,5 +10,5 @@ export const fetchExperiences = async() => {
     const data = await res.json();
     const experiences: Experience[] = data.experiences;
 
-    return experiences;
+    return Experiences;
 }

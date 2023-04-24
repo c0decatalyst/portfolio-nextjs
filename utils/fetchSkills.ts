@@ -1,4 +1,5 @@
 import { Skill } from "../typings"
+import Skills from '@/json/skills.json'
 
 export const fetchSkills = async() => {
     // const res = await fetch(
@@ -9,5 +10,5 @@ export const fetchSkills = async() => {
     const data = await res.json();
     const skills: Skill[] = data.skills;
 
-    return skills;
+    return Skills;
 }

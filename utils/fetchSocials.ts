@@ -1,4 +1,5 @@
 import { Social } from "../typings"
+import Socials from '@/json/socials.json'
 
 export const fetchSocials = async() => {
     // const res = await fetch(
@@ -9,5 +10,5 @@ export const fetchSocials = async() => {
     const data = await res.json();
     const socials: Social[] = data.socials;
 
-    return socials;
+    return Socials;
 }
