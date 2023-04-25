@@ -36,7 +36,7 @@ export default function Home({pageInfo, experiences, skills, projects, socials }
       </Head>
 
       <Header socials={socials} />
- 
+{/*  
       <section id="hero" className='snap-start'>
         <Hero pageInfo={pageInfo} />
       </section>
@@ -73,7 +73,7 @@ export default function Home({pageInfo, experiences, skills, projects, socials }
             />
             </Link>
           </div>
-        </footer>      
+        </footer>       */}
     </div>
   );
 }
