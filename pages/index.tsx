@@ -1,4 +1,4 @@
-import type { GetStaticProps } from 'next'
+import type { GetServerSideProps, GetStaticProps } from 'next'
 import Head from 'next/head'
 // import Link from 'next/link'
 // import Image from 'next/image'
@@ -79,7 +79,7 @@ type Props = {
   );
 }
 
-export const getStaticProps: GetStaticProps<Props> = async () => {
+export const getServerSideProps: GetServerSideProps<Props> = async () => {
   // const pageInfo: PageInfo = await fetchPageInfo();
   // const experiences: Experience[] = await fetchExperiences();
   // const skills: Skill[] = await fetchSkills();
@@ -94,7 +94,7 @@ export const getStaticProps: GetStaticProps<Props> = async () => {
       // projects,
       socials
     },
-    revalidate: 10, // regen the page when incoming request at most every xx secs
+    // revalidate: 10, // regen the page when incoming request at most every xx secs
   }
 }
 export const config = {
