@@ -4,7 +4,7 @@ import { PageInfo } from '@/typings'
 import pageInfoJson from '@/json/pageInfo.json'
 
 type Data = {
-  pageInfo: PageInfo
+  pageInfo: string
 }
 
 // export const config = {
@@ -16,5 +16,5 @@ export default async function handler(
   res: NextApiResponse<Data>
 ) {
   const pageInfo: PageInfo = pageInfoJson 
-  res.status(200).json({ pageInfo })
+  res.status(200).json({ pageInfo:"kkj" })
 }
