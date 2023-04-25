@@ -1,25 +1,25 @@
-'use client'
+// 'use client'
 
 import React from "react";
 import { SocialIcon } from "react-social-icons";
 import { motion } from 'framer-motion';
 import { Social } from '@/typings'
-import { useState, useEffect } from 'react';
+// import { useState, useEffect } from 'react';
 
 type Props = {
   socials: Social[]
 };
 
 function Header({ socials }: Props) {
-  const [hasMounted, setHasMounted] = useState(false);
-    // Hooks
-    useEffect(() => {
-      setHasMounted(true);
-    }, [])
+  // const [hasMounted, setHasMounted] = useState(false);
+  //   // Hooks
+  //   useEffect(() => {
+  //     setHasMounted(true);
+  //   }, [])
 
-  // Render
-  if (!hasMounted) return null;
-
+  // // Render
+  // if (!hasMounted) return null;
+  
   return (
     <header className="sticky top-0 p-5 flex items-start justify-between max-w-7xl mx-auto z-20 xl:items-center">
       <motion.div 
@@ -38,14 +38,14 @@ function Header({ socials }: Props) {
         }}
         className="flex flex-row items-center"
       >
-        {/* {socials?.map((social, i) => (
+        {socials?.map((social, i) => (
           <SocialIcon 
               key={i}
               url={social.url}
               fgColor="gray"
               bgColor="transparent"
           />          
-        ))} */}
+        ))}
       </motion.div>
       <motion.div 
         initial={{
