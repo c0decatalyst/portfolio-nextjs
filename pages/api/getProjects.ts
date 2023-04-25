@@ -7,14 +7,14 @@ type Data = {
   projects: Project[]
 }
 
+export const config = {
+	runtime: 'edge',
+}
+
 export default async function handler(
   req: NextApiRequest,
   res: NextApiResponse<Data>
 ) {
   const projects: Project[] = Projects 
   res.status(200).json({ projects })
-}
-
-export const config = {
-	runtime: 'edge',
 }
