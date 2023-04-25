@@ -6,6 +6,7 @@ export const fetchPageInfo = async() => {
     );
 
     const data = await res.json();
+    console.log(data);
     const pageInfo: PageInfo = data.pageInfo;
 
     return pageInfo;
