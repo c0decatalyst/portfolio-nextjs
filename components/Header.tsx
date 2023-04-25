@@ -2,7 +2,7 @@ import React from "react";
 import { SocialIcon } from "react-social-icons";
 import { motion } from 'framer-motion';
 import { Social } from '@/typings'
-
+"use client"
 type Props = {
   socials: Social[]
 };
