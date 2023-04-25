@@ -96,5 +96,5 @@ export const getStaticProps: GetStaticProps<Props> = async () => {
   }
 }
 export const config = {
-	runtime: 'edge',
+	runtime: 'experimental-edge',
 }
