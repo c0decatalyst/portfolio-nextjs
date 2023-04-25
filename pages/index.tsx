@@ -37,7 +37,7 @@ type Props = {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      {/* <Header socials={socials} /> */}
+      <Header socials={socials} />
 {/*  
       <section id="hero" className='snap-start'>
         <Hero pageInfo={pageInfo} />
