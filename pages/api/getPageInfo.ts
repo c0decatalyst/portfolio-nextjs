@@ -1,22 +1,22 @@
-// Next.js API route support: https://nextjs.org/docs/api-routes/introduction
-import type { NextApiRequest, NextApiResponse } from 'next'
-import { PageInfo } from '@/typings'
-// import pageInfoJson from '@/json/pageInfo.json'
+// // Next.js API route support: https://nextjs.org/docs/api-routes/introduction
+// import type { NextApiRequest, NextApiResponse } from 'next'
+// import { PageInfo } from '@/typings'
+// // import pageInfoJson from '@/json/pageInfo.json'
 
-type Data = {
-  pageInfo: PageInfo
-}
+// type Data = {
+//   pageInfo: PageInfo
+// }
 
-export const config = {
-	runtime: 'edge',
-}
+// export const config = {
+// 	runtime: 'edge',
+// }
 
-export default async function handler(
-  req: NextApiRequest,
-  res: NextApiResponse<Data>
-) {
-  const data: Response = await fetch(`${process.env.NEXT_DB_BASE_URL}/${process.env.NEXT_DB_INFO}/pageInfo`)
-  const pageInfo: PageInfo = await data.json()
+// export default async function handler(
+//   req: NextApiRequest,
+//   res: NextApiResponse<Data>
+// ) {
+//   const data: Response = await fetch(`${process.env.NEXT_DB_BASE_URL}/${process.env.NEXT_DB_INFO}/pageInfo`)
+//   const pageInfo: PageInfo = await data.json()
 
-  res.status(200).json({ pageInfo })
-}
+//   res.status(200).json({ pageInfo })
+// }

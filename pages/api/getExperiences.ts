@@ -1,21 +1,21 @@
-// Next.js API route support: https://nextjs.org/docs/api-routes/introduction
-import type { NextApiRequest, NextApiResponse } from 'next'
-import { Experience } from '@/typings'
-// import Experiences from '@/json/experiences.json'
+// // Next.js API route support: https://nextjs.org/docs/api-routes/introduction
+// import type { NextApiRequest, NextApiResponse } from 'next'
+// import { Experience } from '@/typings'
+// // import Experiences from '@/json/experiences.json'
 
-type Data = {
-  experiences: Experience[]
-}
+// type Data = {
+//   experiences: Experience[]
+// }
 
-export const config = {
-	runtime: 'edge',
-}
+// export const config = {
+// 	runtime: 'edge',
+// }
 
-export default async function handler(
-  req: NextApiRequest,
-  res: NextApiResponse<Data>
-) {
-  const data: Response = await fetch(`${process.env.NEXT_DB_BASE_URL}/${process.env.NEXT_DB_EXP}/experiences`)
-  const experiences: Experience[] = await data.json()
-  res.status(200).json({ experiences })
-}
+// export default async function handler(
+//   req: NextApiRequest,
+//   res: NextApiResponse<Data>
+// ) {
+//   const data: Response = await fetch(`${process.env.NEXT_DB_BASE_URL}/${process.env.NEXT_DB_EXP}/experiences`)
+//   const experiences: Experience[] = await data.json()
+//   res.status(200).json({ experiences })
+// }
