@@ -1,4 +1,4 @@
-import type { GetServerSideProps, GetStaticProps } from 'next'
+import type { GetStaticProps } from 'next'
 import Head from 'next/head'
 // import Link from 'next/link'
 // import Image from 'next/image'
@@ -79,13 +79,13 @@ type Props = {
   );
 }
 
-export const getServerSideProps: GetServerSideProps<Props> = async () => {
+export const getStaticProps: GetStaticProps<Props> = async () => {
   // const pageInfo: PageInfo = await fetchPageInfo();
   // const experiences: Experience[] = await fetchExperiences();
   // const skills: Skill[] = await fetchSkills();
   // const projects: Project[] = await fetchProjects();
-  const socials: Social[] = await fetchSocials();
-
+  // const socials: Social[] = await fetchSocials();
+const socials: any = [1, 2, 3]
   return {
     props: {
       // pageInfo,
