@@ -90,7 +90,7 @@ export const getStaticProps: GetStaticProps<Props> = async () => {
   // );
   // const data = await res.json();
   // const socials: Social[] = data.socials;
-  const data: Response = await fetch(`${process.env.NEXT_DB_BASE_URL}/${process.env.NEXT_DB_INFO}/socials`)
+  const data: Response = await fetch("")//fetch(`${process.env.NEXT_DB_BASE_URL}/${process.env.NEXT_DB_INFO}/socials`)
   const socials: Social[] = await data.json() 
 
 
