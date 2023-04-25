@@ -1,32 +1,31 @@
 import type { GetStaticProps } from 'next'
 import Head from 'next/head'
-// import Link from 'next/link'
-// import Image from 'next/image'
+import Link from 'next/link'
+import Image from 'next/image'
 import Header from '@/components/Header'
-// import Hero from '@/components/Hero'
-// import About from '@/components/About'
-// import WorkExperience from '@/components/WorkExperience'
-// import Contact from '@/components/Contact'
-// import Projects from '@/components/Projects'
-// import Skills from '@/components/Skills'
+import Hero from '@/components/Hero'
+import About from '@/components/About'
+import WorkExperience from '@/components/WorkExperience'
+import Contact from '@/components/Contact'
+import Projects from '@/components/Projects'
+import Skills from '@/components/Skills'
 import { PageInfo, Experience, Skill, Project, Social } from '@/typings';
-// import { fetchExperiences } from '@/utils/fetchExperiences'
-// import { fetchPageInfo } from '@/utils/fetchPageInfo'
-// import { fetchProjects } from '@/utils/fetchProjects'
-// import { fetchSkills } from '@/utils/fetchSkills'
+import { fetchExperiences } from '@/utils/fetchExperiences'
+import { fetchPageInfo } from '@/utils/fetchPageInfo'
+import { fetchProjects } from '@/utils/fetchProjects'
+import { fetchSkills } from '@/utils/fetchSkills'
 import { fetchSocials } from '@/utils/fetchSocials'
 
 
 type Props = {
-  // pageInfo: PageInfo;
-  // experiences: Experience[];
-  // skills: Skill[];
-  // projects: Project[];
+  pageInfo: PageInfo;
+  experiences: Experience[];
+  skills: Skill[];
+  projects: Project[];
   socials: Social[];
 };
 
-// export default function Home({pageInfo, experiences, skills, projects, socials }: Props) {
-  export default function Home({ socials }: Props) {
+export default function Home({pageInfo, experiences, skills, projects, socials }: Props) {
   return (
     <div className="bg-[rgb(36,36,36)] text-white h-screen snap-y snap-mandatory overflow-y-scroll overflow-x-hidden z-0 scrollbar scrollbar-track-gray-400/20 scrollbar-thumb-[#F7AB0A]/80">
       <Head>
@@ -37,7 +36,7 @@ type Props = {
       </Head>
 
       <Header socials={socials} />
-{/*  
+ 
       <section id="hero" className='snap-start'>
         <Hero pageInfo={pageInfo} />
       </section>
@@ -74,7 +73,7 @@ type Props = {
             />
             </Link>
           </div>
-        </footer>       */}
+        </footer>      
     </div>
   );
 }
@@ -85,13 +84,18 @@ export const getStaticProps: GetStaticProps<Props> = async () => {
   // const skills: Skill[] = await fetchSkills();
   // const projects: Project[] = await fetchProjects();
   // const socials: Social[] = await fetchSocials();
-const socials: any = [1, 2, 3]
+
+  const pageInfo: any = {};
+  const experiences: any[] = [1, 2, 3, 4]
+  const skills: any[] = [1, 2, 3, 4]
+  const projects: any[] = [1, 2, 3, 4]
+  const socials: any[] = [1, 2, 3, 4]
   return {
     props: {
-      // pageInfo,
-      // experiences,
-      // skills,
-      // projects,
+      pageInfo,
+      experiences,
+      skills,
+      projects,
       socials
     },
     // revalidate: 10, // regen the page when incoming request at most every xx secs
