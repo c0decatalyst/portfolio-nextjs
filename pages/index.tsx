@@ -22,8 +22,7 @@ type Props = {
   // experiences: Experience[];
   // skills: Skill[];
   // projects: Project[];
-  // socials: Social[];
-  socials: any
+  socials: Social[];
 };
 
 // export default function Home({pageInfo, experiences, skills, projects, socials }: Props) {
@@ -85,9 +84,7 @@ export const getStaticProps: GetStaticProps<Props> = async () => {
   // const experiences: Experience[] = await fetchExperiences();
   // const skills: Skill[] = await fetchSkills();
   // const projects: Project[] = await fetchProjects();
-  // const socials: Social[] = await fetchSocials();
-
-  const socials = await fetchSocials();
+  const socials: Social[] = await fetchSocials();
 
   return {
     props: {
@@ -97,7 +94,7 @@ export const getStaticProps: GetStaticProps<Props> = async () => {
       // projects,
       socials
     },
-    // revalidate: 10, // regen the page when incoming request at most every xx secs
+    revalidate: 10, // regen the page when incoming request at most every xx secs
   }
 }
 export const config = {
