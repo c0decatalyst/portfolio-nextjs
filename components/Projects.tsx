@@ -16,7 +16,7 @@ export default function Projects({ projects }: Props) {
       </h3>
     
       <div className='relative w-full flex overflow-x-scroll overflow-y-hidden snap-x snap-mandatory z-20'>
-        {projects.map((project, projKeyId) => (
+        {projects?.map((project, projKeyId) => (
           <div key={projKeyId} className='w-screen flex-shrink-0 snap-center flex flex-col space-y-5 items-center justify-center p-20 md:p-44 h-screen'>
             <motion.img
                 initial={{
@@ -33,13 +33,13 @@ export default function Projects({ projects }: Props) {
             <div className='space-y-10 px-0 md:px-10 max-w-6xl'>
               <h4 className='text-4xl font-semibold text-center'>
                 <span className='underline decoration-[#F7AB0A]/50'>
-                  {projKeyId + 1} of {projects.length}:
+                  {projKeyId + 1} of {projects?.length}:
                 </span>{" "}
                 {project?.title}
               </h4>
               
               <div className='flex items-center space-x-2 justify-center'>
-                {project?.technologies.map((tech, techKeyId) => (
+                {project?.technologies?.map((tech, techKeyId) => (
                   <Image
                     className='rounded-full h-5 w-5'
                     src={tech?.logoUrl}
@@ -52,7 +52,7 @@ export default function Projects({ projects }: Props) {
               </div>
 
               <div className='text-lg text-center md:text-left space-y-5 overflow-y-scroll'>
-                {project?.summaryList.map((paragraphs, summaryKeyId) => (
+                {project?.summaryList?.map((paragraphs, summaryKeyId) => (
                   <p key={summaryKeyId}>{paragraphs}</p>
                 ))}
               </div>
