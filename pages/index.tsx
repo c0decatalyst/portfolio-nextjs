@@ -85,13 +85,13 @@ export const getStaticProps: GetStaticProps<Props> = async () => {
   // const projects: Project[] = await fetchProjects();
   // const socials: Social[] = await fetchSocials();
 
-  // const res = await fetch(
-  //   `${process.env.NEXT_PUBLIC_BASE_URL}/api/getSocials`
-  // );
-  // const data = await res.json();
-  // const socials: Social[] = data.socials;
-  const data: Response = await fetch(`${process.env.NEXT_DB_BASE_URL}/${process.env.NEXT_DB_INFO}/socials`)
-  const socials: Social[] = await data.json() 
+  const res = await fetch(
+    `${process.env.NEXT_PUBLIC_BASE_URL}/api/getSocials`
+  );
+  const data = await res.json();
+  const socials: Social[] = data.socials;
+  // const data: Response = await fetch(`${process.env.NEXT_DB_BASE_URL}/${process.env.NEXT_DB_INFO}/socials`)
+  // const socials: Social[] = await data.json() 
 
 
   const pageInfo: any = {};
