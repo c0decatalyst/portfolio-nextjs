@@ -96,6 +96,6 @@ export const getStaticProps: GetStaticProps<Props> = async () => {
     revalidate: 10, // regen the page when incoming request at most every xx secs
   }
 }
-export const config = {
-	runtime: 'experimental-edge',
-}
+// export const config = {
+// 	runtime: 'experimental-edge',
+// }

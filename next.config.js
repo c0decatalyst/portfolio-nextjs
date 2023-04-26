@@ -5,7 +5,7 @@ const nextConfig = {
   //   runtime: 'edge',
   // },
   images: {
-    unoptimized: true, // Needed since running static 
+    unoptimized: true, // Needed when running static export
     remotePatterns: [
       {
         protocol: 'https',

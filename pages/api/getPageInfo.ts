@@ -6,9 +6,9 @@ type Data = {
   pageInfo: PageInfo
 }
 
-export const config = {
-	runtime: 'edge',
-}
+// export const config = {
+// 	runtime: 'edge',
+// }
 
 export default async function handler(
   req: NextApiRequest,
