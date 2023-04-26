@@ -1,7 +1,6 @@
 // Next.js API route support: https://nextjs.org/docs/api-routes/introduction
 import type { NextApiRequest, NextApiResponse } from 'next'
 import { Social } from '@/typings'
-// import Socials from '@/json/socials.json'
 
 type Data = {
   socials: Social[]

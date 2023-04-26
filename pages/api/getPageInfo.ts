@@ -1,7 +1,6 @@
 // Next.js API route support: https://nextjs.org/docs/api-routes/introduction
 import type { NextApiRequest, NextApiResponse } from 'next'
 import { PageInfo } from '@/typings'
-// import pageInfoJson from '@/json/pageInfo.json'
 
 type Data = {
   pageInfo: PageInfo
