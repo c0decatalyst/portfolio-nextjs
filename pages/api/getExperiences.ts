@@ -17,7 +17,7 @@ export default async function handler(
   req: NextRequest,
   res: NextResponse
 ) {
-  const data: Response = await fetch(`${process.env.NEXT_PUBLIC_DB_BASE_URL}/${process.env.NEXT_PUBLIC_DB_INFO}/experiences`)
+  const data: Response = await fetch(`${process.env.NEXT_PUBLIC_DB_BASE_URL}/${process.env.NEXT_PUBLIC_DB_EXP}/experiences`)
   const experiences: Experience[] = await data.json()
   // res.status(200).json({ experiences })
   return NextResponse.json({experiences},{status: 200 })
