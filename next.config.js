@@ -2,7 +2,7 @@
 const nextConfig = {
   reactStrictMode: true,
   experimental: {
-    runtime: 'edge',
+    runtime: 'experimental-edge',
   },
   images: {
     // unoptimized: true, // Needed since running static 
