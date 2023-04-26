@@ -12,6 +12,3 @@ export const fetchSocials = async() => {
 
     return socials;
 }
-export const config = {
-	runtime: 'edge',
-}

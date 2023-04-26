@@ -93,7 +93,7 @@ export const getStaticProps: GetStaticProps<Props> = async () => {
       projects,
       socials
     },
-    // revalidate: 10, // regen the page when incoming request at most every xx secs
+    revalidate: 10, // regen the page when incoming request at most every xx secs
   }
 }
 export const config = {
