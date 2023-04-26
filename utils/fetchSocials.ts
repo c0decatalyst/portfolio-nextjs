@@ -1,5 +1,4 @@
 import { Social } from "../typings"
-// import type { NextApiRequest, NextApiResponse } from 'next'
 
 export const fetchSocials = async() => {
     const res = await fetch(
@@ -8,8 +7,8 @@ export const fetchSocials = async() => {
     );
 
     const data = await res.json();
-    const socials: Social[] = data.socials;
+    // const socials: Social[] = data.socials;
+    const socials: Social[] = data;
 
-    // return res.status(200).json({ socials })
     return socials;
 }
