@@ -36,7 +36,7 @@ export default function Home({pageInfo, experiences, skills, projects, socials }
       </Head>
 
       <Header socials={socials} />
-{/*  
+ 
       <section id="hero" className='snap-start'>
         <Hero pageInfo={pageInfo} />
       </section>
@@ -73,26 +73,17 @@ export default function Home({pageInfo, experiences, skills, projects, socials }
             />
             </Link>
           </div>
-        </footer>       */}
+        </footer>      
     </div>
   );
 }
 
 export const getStaticProps: GetStaticProps<Props> = async () => {
-  // const pageInfo: PageInfo = await fetchPageInfo();
-  // const experiences: Experience[] = await fetchExperiences();
-  // const skills: Skill[] = await fetchSkills();
-  // const projects: Project[] = await fetchProjects();
+  const pageInfo: PageInfo = await fetchPageInfo();
+  const experiences: Experience[] = await fetchExperiences();
+  const skills: Skill[] = await fetchSkills();
+  const projects: Project[] = await fetchProjects();
   const socials: Social[] = await fetchSocials();
-
-  // const data: Response = await fetch(`${process.env.NEXT_DB_BASE_URL}/${process.env.NEXT_DB_INFO}/socials`)
-  // const socials: Social[] = await data.json() 
-
-
-  const pageInfo: any = {};
-  const experiences: any[] = [1, 2, 3, 4]
-  const skills: any[] = [1, 2, 3, 4]
-  const projects: any[] = [1, 2, 3, 4]
 
   return {
     props: {
@@ -102,9 +93,9 @@ export const getStaticProps: GetStaticProps<Props> = async () => {
       projects,
       socials
     },
-    // revalidate: 10, // regen the page when incoming request at most every xx secs
+    revalidate: 10, // regen the page when incoming request at most every xx secs
   }
 }
-export const config = {
-	runtime: 'experimental-edge',
-}
+// export const config = {
+// 	runtime: 'experimental-edge',
+// }
