@@ -11,13 +11,15 @@ export default function Projects({ projects }: Props) {
 
   return (
     <div className='h-screen relative flex overflow-hidden flex-col text-left md:flex-row max-w-full justify-evenly mx-auto items-center z-0'>
-      <h3 className='absolute top-24 uppercase tracking-[20px] text-gray-500 text-2xl'>
+      <h3 className='absolute top-20 uppercase tracking-[20px] text-gray-500 text-2xl'>
         Projects
       </h3>
+      <div className='w-full absolute top-[30%] bg-[#F7AB0A]/10 left-0 h-[500px] -skew-y-12' />      
     
       <div className='relative w-full flex overflow-x-scroll overflow-y-hidden snap-x snap-mandatory z-20'>
         {projects?.map((project, projKeyId) => (
-          <div key={projKeyId} className='w-screen flex-shrink-0 snap-center flex flex-col space-y-5 items-center justify-center p-20 md:p-44 h-screen'>
+          // <div key={projKeyId} className='w-screen flex-shrink-0 snap-center flex flex-col space-y-5 items-center justify-center p-20 md:p-44 h-screen'>
+          <div key={projKeyId} className='w-screen flex-shrink-0 snap-center flex flex-col space-y-5 items-center justify-center p-5 pt-20 mt-10 h-screen md:p-20 '>          
             <motion.img
                 initial={{
                   y: -300,
@@ -38,10 +40,10 @@ export default function Projects({ projects }: Props) {
                 {project?.title}
               </h4>
               
-              <div className='flex items-center space-x-2 justify-center'>
+              <div className='flex items-center space-x-2 justify-center flex-wrap gap-y-3'>                
                 {project?.technologies?.map((tech, techKeyId) => (
                   <Image
-                    className='rounded-full h-5 w-5'
+                    className='rounded-full h-10 w-fit md:h-10 md:w-fit'
                     src={tech?.logoUrl}
                     alt={tech?.title + " logo"}
                     key={techKeyId}
@@ -51,7 +53,7 @@ export default function Projects({ projects }: Props) {
                 ))}
               </div>
 
-              <div className='text-lg text-center md:text-left space-y-5 overflow-y-scroll'>
+              <div className='text-lg text-center md:text-left space-y-5 overflow-auto h-1/2 md:h-full xl:h-full'>
                 {project?.summaryList?.map((paragraphs, summaryKeyId) => (
                   <p key={summaryKeyId}>{paragraphs}</p>
                 ))}
@@ -60,7 +62,6 @@ export default function Projects({ projects }: Props) {
           </div>
         ))}
       </div>
-      <div className='w-full absolute top-[30%] bg-[#F7AB0A]/10 left-0 h-[500px] -skew-y-12' />
     </div>
   )
 }

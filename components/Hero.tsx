@@ -12,17 +12,17 @@ type Props = {
 function Hero({ pageInfo }: Props) {
     const [text, count] = useTypewriter({
         words: [
-            "Tech-Minded-Entrepeneur.tsx",
-            "<Lover-of-Technology />",
-            "function() { ChatGPT := false; }",
-            "Bridging-Creativity-And-Technology.js"
+            "Tech-Entrepeneur.tsx",
+            "<SparkMyCuriosity />",
+            "function() { enableChatGpt = false; }",
+            "Build-Creative-Solutions.js"
         ],
         loop: true,
         delaySpeed: 2000
     });
     
     return (
-        <div className="h-screen flex flex-col space-y-8 items-center justify-center text-center overflow-hidden snap-center snap-mandatory">
+        <div className="h-screen flex flex-col space-y-10 items-center justify-center text-center overflow-hidden snap-center snap-mandatory">
             <BackgroundCircles />
             <Image
                 className='relative rounded-full h-32 w-32 mx-auto object-cover'
@@ -35,7 +35,7 @@ function Hero({ pageInfo }: Props) {
                 <h2 className='text-sm uppercase text-gray-500 pb-2 tracking-[15px]'>
                     {pageInfo.roleHeader}
                 </h2>
-                <h1 className='text-5x1 lg:text-6xl font-semibold px-10'>
+                <h1 className='text-4x1 lg:text-5xl font-semibold px-10'>
                     <span className="mr-3">{text}</span>
                     <Cursor cursorColor="#F7AB0A" />
                 </h1>
