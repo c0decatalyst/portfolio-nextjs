@@ -29,8 +29,8 @@ export default function Home({pageInfo, experiences, skills, projects, socials }
   return (
     <div className="bg-[rgb(36,36,36)] text-white h-screen snap-y snap-mandatory overflow-y-scroll overflow-x-hidden z-0 scrollbar scrollbar-track-gray-400/20 scrollbar-thumb-[#F7AB0A]/80">
       <Head>
-        <title>Magdy&#39;s Portfolio</title>
-        <meta name="description" content="Magdy's portfolio" />
+        <title>My Portfolio</title>
+        <meta name="description" content="portfolio" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
